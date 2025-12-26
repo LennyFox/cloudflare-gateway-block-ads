@@ -1,9 +1,0 @@
-name: Run Cloudflare Block Ads Update
-on:
-  workflow_dispatch: # Allows you to manually trigger the workflow
-  schedule:
-    - cron: '0 0 * * 0' # Runs automatically every Sunday at midnight
-
-jobs:
-  update-block-list:
-    uses: LennyFox/cloudflare-gateway-block-ads/.github/workflows/block_ads_update.yml@main   
